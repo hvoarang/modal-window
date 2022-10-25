@@ -68,84 +68,10 @@
   right: 15px;
 }
 
-.mobile__nav {
-  margin-bottom: auto;
 
-  & li {
-    margin-bottom: 32px;
-  }
 
-  & a {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
 
-    margin-bottom: 32px;
 
-    color: var(--secondary-color);
 
-    &:active {
-      color: var(--accent-color);
-    }
-  }
-}
 
-.mobile__contacts {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
 
-  margin-bottom: 64px;
-}
-
-.mobile__contacts--mail {
-  color: var(--main-color);
-}
-
-.mobile__contacts--phone {
-  display: block;
-
-  margin-bottom: 32px;
-
-  color: var(--accent-color);
-
-  @media screen and (min-width: 425px) {
-    font-size: 40px;
-  }
-}
-
-.mobile__socials {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-
-  & a {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-
-    color: var(--accent-color);
-  }
-}
-
-.mobile__socials--pos {
-  position: relative;
-}
-
-.mobile__socials--decor::after {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: calc(100% + 10px);
-
-  display: block;
-
-  width: 1px;
-  height: 22px;
-
-  border: 1px solid rgba(33, 33, 33, 0.2);
-}

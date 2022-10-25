@@ -47,7 +47,7 @@
 
         <form class="modal__form" name="registration-form" id="modal__form">
           <strong class="modal__form--title"
-            >Залиште свої дані, ми вам передзвонимо</strong
+            >Leave your details, we will call you back</strong
           >
           <div
             class="modal__form--details"
@@ -55,14 +55,14 @@
             aria-labelledby="modal__form"
           >
             <div class="modal__form--field">
-              <label class="modal__form--label" for="name">Ім'я</label>
+              <label class="modal__form--label" for="name">name</label>
               <input
                 type="text"
                 name="name"
                 id="name"
                 autocomplete="name"
                 class="modal__form--input"
-                placeholder="Ваше ім'я"
+                placeholder="Your name"
               />
               <svg class="form__input--icon" width="18" height="18">
                 <use href="./images/icons.svg#person-black"></use>
@@ -70,7 +70,7 @@
             </div>
 
             <div class="modal__form--field">
-              <label for="tel" class="modal__form-label">Телефон</label>
+              <label for="tel" class="modal__form-label">Phone number</label>
               <input
                 type="tel"
                 name="tel"
@@ -85,7 +85,7 @@
             </div>
 
             <div class="modal__form--field">
-              <label for="email" class="modal__form--label">Пошта</label>
+              <label for="email" class="modal__form--label">Mail</label>
               <input
                 type="email"
                 name="email"
@@ -100,12 +100,12 @@
             </div>
 
             <div class="modal__form--field">
-              <label for="comment" class="modal__form--label">Коментар</label>
+              <label for="comment" class="modal__form--label">Comments</label>
               <textarea
                 name="comment"
                 id="comment"
                 class="form__input--comment"
-                placeholder="Введіть текст"
+                placeholder="Put your comments"
               ></textarea>
             </div>
           </div>
@@ -123,54 +123,14 @@
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
 
-              <span>Погоджуюся з розсилкою та приймаю</span>
-              <a href="#" class="label__agree--accent">Умови договору</a>
+              <span>I agree with the mailing and accept it</span>
+              <a href="#" class="label__agree--accent">agreement</a>
             </label>
           </div>
 
-          <button type="submit" class="modal__form--btn btn">Відправити</button>
+          <button type="submit" class="modal__form--btn btn">Send</button>
         </form>
       </div>
-    </div>
-
-    <!--//================================================//
-        //         mobile Menu             
-        //================================================//-->
-
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu__btn menu-toggle js-close-menu">
-        <svg class="menu__btn--icon" width="40" height="40">
-          <use href="./images/icons.svg#menu-close"></use>
-        </svg>
-      </button>
-
-      <ul class="mobile__nav">
-        <li><a href="./index.html" class="link">Студія</a></li>
-        <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-        <li><a href="#contacts" class="link">Контакти</a></li>
-      </ul>
-
-      <ul class="mobile__contacts">
-        <li>
-          <a class="mobile__contacts--phone" href="">+38 096 111 11 11</a>
-        </li>
-        <li>
-          <a class="mobile__contacts--mail" href="">info@devstudio.com</a>
-        </li>
-      </ul>
-
-      <ul class="mobile__socials">
-        <li class="mobile__socials--pos">
-          <a href="" class="mobile__socials--decor">Instagram</a>
-        </li>
-        <li class="mobile__socials--pos">
-          <a href="" class="mobile__socials--decor">Twitter</a>
-        </li>
-        <li class="mobile__socials--pos">
-          <a href="" class="mobile__socials--decor">Facebook</a>
-        </li>
-        <li><a href="" class="link">LinkedIn</a></li>
-      </ul>
     </div>
 
     <script
@@ -180,7 +140,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script defer src="./js/mobile-menu.js"></script>
     <script defer src="./js/modal.js"></script>
   </body>
 </html>
