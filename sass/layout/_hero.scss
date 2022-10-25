@@ -1,40 +1,7 @@
 .hero {
-
-    max-width: 1600px;
-
-    margin: 0 auto;
-
-    background-color: var(--bg-dark-color);
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-   
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    right: 45%;
 }
-
-.hero__container {
-    text-align: center;
-}
-
-.hero__title {
-    max-width: 360px;
-
-    margin: 0 auto;
-    margin-bottom: 30px;
-
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.61;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-
-    color: var(--white-color);
-
-    @media screen and (min-width: 1200px) {
-        max-width: 696px;
-
-        font-size: 44px;
-        line-height: 1.36;
-    }
-}
+    

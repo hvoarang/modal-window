@@ -61,152 +61,6 @@ img, svg {
   margin-right: auto;
 }
 
-.menu__btn {
-  width: 40px;
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: auto;
-  padding: 0;
-  color: var(--secondary-color);
-  background-color: transparent;
-  border: none;
-  -webkit-transition: color 250ms;
-  transition: color 250ms;
-}
-.menu__btn:hover, .menu__btn:focus {
-  background-color: #188ce8;
-}
-@media screen and (min-width: 768px) {
-  .menu__btn {
-    display: none;
-  }
-}
-.menu__btn:active {
-  color: var(--accent-color);
-}
-
-.menu__btn--icon {
-  fill: currentColor;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.menu-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 48px 40px;
-  background: var(--white-color);
-  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transition: -webkit-transform 400ms;
-  transition: -webkit-transform 400ms;
-  transition: transform 400ms;
-  transition: transform 400ms, -webkit-transform 400ms;
-}
-.menu-container.is-open {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
-.menu-toggle {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-}
-
-.mobile__nav {
-  margin-bottom: auto;
-}
-.mobile__nav li {
-  margin-bottom: 32px;
-}
-.mobile__nav a {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  margin-bottom: 32px;
-  color: var(--secondary-color);
-}
-.mobile__nav a:active {
-  color: var(--accent-color);
-}
-
-.mobile__contacts {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  margin-bottom: 64px;
-}
-
-.mobile__contacts--mail {
-  color: var(--main-color);
-}
-
-.mobile__contacts--phone {
-  display: block;
-  margin-bottom: 32px;
-  color: var(--accent-color);
-}
-@media screen and (min-width: 425px) {
-  .mobile__contacts--phone {
-    font-size: 40px;
-  }
-}
-
-.mobile__socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 20px;
-}
-.mobile__socials a {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
-}
-
-.mobile__socials--pos {
-  position: relative;
-}
-
-.mobile__socials--decor::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: calc(100% + 10px);
-  display: block;
-  width: 1px;
-  height: 22px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-}
-
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -590,4 +444,11 @@ img, svg {
 
 .subscribe__btn--icon {
   margin-left: 10px;
+}
+
+.hero {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  right: 45%;
 }/*# sourceMappingURL=main.css.map */
