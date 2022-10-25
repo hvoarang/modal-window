@@ -1,0 +1,84 @@
+.hero {
+    @include section(118px, 118px);
+
+    max-width: 1600px;
+
+    margin: 0 auto;
+
+    background-color: var(--bg-dark-color);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    // Mobile screen
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, .4),
+            rgba(47, 48, 58, .4)),
+        url(../images/bg/bg_mob.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, .4),
+                rgba(47, 48, 58, .4)),
+            url(../images/bg/bg_mob@2x.jpg);
+    }
+
+    // Tablet screen
+    @media screen and (min-width: 481px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/bg/bg_tab.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/bg/bg_tab@2x.jpg);
+        }
+    }
+
+
+    @media screen and (min-width: 769px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/bg/bg_desk.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/bg/bg_desk@2x.jpg);
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include section(200px, 200px);
+    }
+}
+
+.hero__container {
+    text-align: center;
+}
+
+.hero__title {
+    max-width: 360px;
+
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+
+    @media screen and (min-width: 1200px) {
+        max-width: 696px;
+
+        font-size: 44px;
+        line-height: 1.36;
+    }
+}

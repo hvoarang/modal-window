@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Студія Web-дизайну" />
+    <title>modal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="container hero__container">
+          <h1 class="hero__title">modal window</h1>
+          <button type="button" class="hero__button btn" data-modal-open>
+            button
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!--//================================================//
+        //         modal Window              
+        //================================================//-->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__close" data-modal-close>
+          <svg class="modal__close--icon" width="30" height="30">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+
+        <form class="modal__form" name="registration-form" id="modal__form">
+          <strong class="modal__form--title"
+            >Залиште свої дані, ми вам передзвонимо</strong
+          >
+          <div
+            class="modal__form--details"
+            role="group"
+            aria-labelledby="modal__form"
+          >
+            <div class="modal__form--field">
+              <label class="modal__form--label" for="name">Ім'я</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                autocomplete="name"
+                class="modal__form--input"
+                placeholder="Ваше ім'я"
+              />
+              <svg class="form__input--icon" width="18" height="18">
+                <use href="./images/icons.svg#person-black"></use>
+              </svg>
+            </div>
+
+            <div class="modal__form--field">
+              <label for="tel" class="modal__form-label">Телефон</label>
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                autocomplete="on"
+                class="modal__form--input"
+                placeholder="+380"
+              />
+              <svg class="form__input--icon" width="18" height="18">
+                <use href="./images/icons.svg#phone-black"></use>
+              </svg>
+            </div>
+
+            <div class="modal__form--field">
+              <label for="email" class="modal__form--label">Пошта</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+                class="modal__form--input"
+                placeholder="username@email.com"
+              />
+              <svg class="form__input--icon" width="18" height="18">
+                <use href="./images/icons.svg#email-black"></use>
+              </svg>
+            </div>
+
+            <div class="modal__form--field">
+              <label for="comment" class="modal__form--label">Коментар</label>
+              <textarea
+                name="comment"
+                id="comment"
+                class="form__input--comment"
+                placeholder="Введіть текст"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="modal__form--checkbox">
+            <label class="form__label--agree">
+              <input
+                class="form__input--agree"
+                type="checkbox"
+                name="agree"
+                value="agree"
+              />
+
+              <svg class="label__agree--icon" width="16" height="15">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+
+              <span>Погоджуюся з розсилкою та приймаю</span>
+              <a href="#" class="label__agree--accent">Умови договору</a>
+            </label>
+          </div>
+
+          <button type="submit" class="modal__form--btn btn">Відправити</button>
+        </form>
+      </div>
+    </div>
+
+    <!--//================================================//
+        //         mobile Menu             
+        //================================================//-->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu__btn menu-toggle js-close-menu">
+        <svg class="menu__btn--icon" width="40" height="40">
+          <use href="./images/icons.svg#menu-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile__nav">
+        <li><a href="./index.html" class="link">Студія</a></li>
+        <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
+        <li><a href="#contacts" class="link">Контакти</a></li>
+      </ul>
+
+      <ul class="mobile__contacts">
+        <li>
+          <a class="mobile__contacts--phone" href="">+38 096 111 11 11</a>
+        </li>
+        <li>
+          <a class="mobile__contacts--mail" href="">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile__socials">
+        <li class="mobile__socials--pos">
+          <a href="" class="mobile__socials--decor">Instagram</a>
+        </li>
+        <li class="mobile__socials--pos">
+          <a href="" class="mobile__socials--decor">Twitter</a>
+        </li>
+        <li class="mobile__socials--pos">
+          <a href="" class="mobile__socials--decor">Facebook</a>
+        </li>
+        <li><a href="" class="link">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="./js/modal.js"></script>
+  </body>
+</html>
